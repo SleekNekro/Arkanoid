@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://ca6upsg2wawi6"]
+
+[ext_resource type="Texture2D" uid="uid://dt27jwrbi1exb" path="res://Sprites/block_pink.png" id="1_x3jab"]
+
+[node name="PinkBrick" type="StaticBody2D"]
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(10, 25)
+texture = ExtResource("1_x3jab")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(10, 25)
+polygon = PackedVector2Array(-8, 4, -8, -4, 8, -4, 8, 4)

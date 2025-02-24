@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://ciicnjmgfjway"]
+
+[ext_resource type="Texture2D" uid="uid://c7ujqp2fcf4by" path="res://Sprites/block_red.png" id="1_xnixq"]
+
+[node name="RedBrick" type="StaticBody2D"]
+position = Vector2(0, -1)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(10, 34)
+texture = ExtResource("1_xnixq")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(10, 34)
+polygon = PackedVector2Array(-8, 4, -8, -4, 8, -4, 8, 4)

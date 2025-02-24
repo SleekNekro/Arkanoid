@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cpknqkovwtrds"]
+
+[ext_resource type="Script" path="res://Scripts/bola.gd" id="1_ir6sp"]
+[ext_resource type="Texture2D" uid="uid://bwh2dtyam13l2" path="res://Sprites/ball.png" id="2_rjn8p"]
+
+[node name="Bola" type="CharacterBody2D"]
+position = Vector2(109, 205)
+script = ExtResource("1_ir6sp")
+speed = Vector2(0, -250)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_rjn8p")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-3, 2.5, -3, -2.5, 3, -2.5, 3, 2.5)

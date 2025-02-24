@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://dlgjegur7mag3"]
+
+[ext_resource type="Texture2D" uid="uid://qv1uf3bxivk2" path="res://Sprites/block_green.png" id="1_205d5"]
+
+[node name="GreenBrick" type="StaticBody2D"]
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(10, 17)
+texture = ExtResource("1_205d5")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(10, 17)
+polygon = PackedVector2Array(-8, 4, -8, -4, 8, -4, 8, 4)

@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxmu08sce55mo"]
+
+[ext_resource type="Script" path="res://Scripts/player.gd" id="1_kudvf"]
+[ext_resource type="Texture2D" uid="uid://bp4l2e53yhrud" path="res://Sprites/racket.png" id="2_oif03"]
+
+[node name="Barra" type="CharacterBody2D"]
+position = Vector2(11, 2)
+script = ExtResource("1_kudvf")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(98, 222)
+scale = Vector2(1.28, 1)
+texture = ExtResource("2_oif03")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(97, 221)
+scale = Vector2(1.28, 1)
+polygon = PackedVector2Array(16.5, 5, 16.5, -5, -16.5, -5, -16.5, 5)
