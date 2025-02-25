@@ -5,7 +5,7 @@ var direction = Vector2.ZERO
 
 
 func _physics_process(delta: float) -> void:
-	direction = Vector2.ZERO  # Resetear dirección cada frame
+	direction = Vector2.ZERO 
 	
 	if Input.is_action_pressed("ui_left"):
 		direction.x = -1
