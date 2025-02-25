@@ -27,9 +27,9 @@ func _physics_process(delta: float) -> void:
 			speed *= 1.2  
 			speed = speed.limit_length(500) 
 			print(speed)
-		# Si colisiona con un ladrillo
+		
 		elif collider and collider.is_in_group("bricks"):
-			collider.queue_free()  # Elimina el ladrillo
+			collider.queue_free()  
 			speed = speed.bounce(collision.get_normal())
 
 	
